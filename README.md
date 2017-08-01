@@ -21,6 +21,17 @@ the monitor topic.
 
 ## Project Structure
 
+### Layout
+
+* src
+ 
+  * main
+  
+    * java/com/linkedin/kmf
+
+* bin
+
+
 ## Getting Started
 
 ### Prerequisites
