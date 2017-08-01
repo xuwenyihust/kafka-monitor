@@ -28,6 +28,12 @@ the monitor topic.
   * main
   
     * java/com/linkedin/kmf
+     
+      * consumer
+      
+      * producer
+      
+      * common
 
 * bin
 
