@@ -47,9 +47,9 @@ the monitor topic.
 
 * App
 
- * SingleClusterMonitor
+  * SingleClusterMonitor
 
- * MultiClusterMonitor
+  * MultiClusterMonitor
 
 * Service
 
