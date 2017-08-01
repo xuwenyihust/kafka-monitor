@@ -33,7 +33,13 @@ the monitor topic.
       
       * producer
       
+      * partitioner
+      
       * common
+      
+      * apps
+      
+      * topicfactory
 
 * bin
 
