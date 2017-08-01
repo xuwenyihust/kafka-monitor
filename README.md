@@ -19,6 +19,8 @@ monitor topic. This allows Kafka Monitor to detect performance issue on every
 broker without requiring users to manually manage the partition assignment of
 the monitor topic.
 
+## Structure
+
 ## Getting Started
 
 ### Prerequisites
