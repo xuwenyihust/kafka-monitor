@@ -52,6 +52,16 @@ the monitor topic.
   * MultiClusterMonitor
 
 * Service
+ 
+  * ProduceService
+  
+  * ConsumeService
+  
+  * TopicManagementService
+  
+  * StatsdMetricsReporterService
+  
+  * DefaultMetricsReporterService
 
 
 ## Getting Started
