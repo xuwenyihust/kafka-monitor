@@ -19,7 +19,7 @@ monitor topic. This allows Kafka Monitor to detect performance issue on every
 broker without requiring users to manually manage the partition assignment of
 the monitor topic.
 
-## Project Structure
+## Project Overview
 
 ### Layout
 
@@ -42,6 +42,12 @@ the monitor topic.
       * topicfactory
 
 * bin
+
+### Structure
+
+* App
+
+* Service
 
 
 ## Getting Started
