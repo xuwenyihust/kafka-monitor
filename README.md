@@ -31,6 +31,8 @@
   Start some producers/consumers, take predefined sequence of actions periodically
   
   These periodic or long-running actions: implemented in services
+  
+  A **typical App**: composed of 1 producer service, 1 consumer service & 1 broker bounce service
 
   * **SingleClusterMonitor**
 
@@ -44,10 +46,20 @@
   * **ProduceService**
   
     Report produce rate & availability 
+    
+    interface: `com.linkedin.kmf.producer.KMBaseProducer`
   
   * **ConsumeService**
   
+    Report message loss rate, message duplicate rate & end-to-end latency
+    
+    interface: `com.linkedin.kmf.consumer.KMBaseConsumer`
+  
   * **TopicManagementService**
+  
+    Ensure that every broker is leader of at least one partition of the monitor topic (to check produce availability)
+    
+    interface: `com.linkedin.kmf.topicfactory.TopicFactory`
   
   * **StatsdMetricsReporterService**
   
