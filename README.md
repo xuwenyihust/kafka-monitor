@@ -66,6 +66,10 @@ A service will execute the action in its own thread and report metrics
   interface: `com.linkedin.kmf.producer.KMBaseProducer`
   
 * **ConsumeService**
+
+ ```java
+ public class ConsumeService implements Service
+ ```
   
   Report message loss rate, message duplicate rate & end-to-end latency
     
