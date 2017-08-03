@@ -57,7 +57,9 @@ A service will execute the action in its own thread and report metrics
  
 * **ProduceService**
 
-  `public class ProduceService implements Service`
+  ```java 
+  public class ProduceService implements Service
+  ```
   
   Report produce rate & availability 
     
