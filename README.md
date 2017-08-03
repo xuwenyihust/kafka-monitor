@@ -67,9 +67,9 @@ A service will execute the action in its own thread and report metrics
   
 * **ConsumeService**
 
- ```java
- public class ConsumeService implements Service
- ```
+  ```java
+  public class ConsumeService implements Service
+  ```
   
   Report message loss rate, message duplicate rate & end-to-end latency
     
@@ -85,6 +85,9 @@ A service will execute the action in its own thread and report metrics
   
 * **DefaultMetricsReporterService**
 
+  ```java
+  public class DefaultMetricsReporterService implements Service
+  ```
 
 
 
