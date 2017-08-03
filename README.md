@@ -38,8 +38,7 @@
 
   * **MultiClusterMonitor**
   
-
-* **Service**
+--------------------------------------------------------------------
 
 ```java
 void start();
@@ -50,6 +49,8 @@ boolean isRunning();
 
 void awaitShutDown();
 ```
+
+* **Service**
 
   A service will execute the action in its own thread and report metrics
  
