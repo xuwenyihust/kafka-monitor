@@ -26,23 +26,32 @@
 
 ### Structure
 
-* App
+* **App**
 
-  * SingleClusterMonitor
+  Start some producers/consumers, take predefined sequence of actions periodically
+  
+  These periodic or long-running actions: implemented in services
 
-  * MultiClusterMonitor
+  * **SingleClusterMonitor**
 
-* Service
+  * **MultiClusterMonitor**
+  
+
+* **Service**
+
+  A service will execute the action in its own thread and report metrics
  
-  * ProduceService
+  * **ProduceService**
   
-  * ConsumeService
+    Report produce rate & availability 
   
-  * TopicManagementService
+  * **ConsumeService**
   
-  * StatsdMetricsReporterService
+  * **TopicManagementService**
   
-  * DefaultMetricsReporterService
+  * **StatsdMetricsReporterService**
+  
+  * **DefaultMetricsReporterService**
 
 
 
