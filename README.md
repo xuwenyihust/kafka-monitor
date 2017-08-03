@@ -42,6 +42,8 @@ A **typical App**: composed of 1 producer service, 1 consumer service & 1 broker
 
 
 ```java
+/*interface Service*/
+
 void start();
 
 void stop();
@@ -54,6 +56,8 @@ void awaitShutDown();
 A service will execute the action in its own thread and report metrics
  
 * **ProduceService**
+
+  `public class ProduceService implements Service`
   
   Report produce rate & availability 
     
