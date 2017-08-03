@@ -41,6 +41,16 @@
 
 * **Service**
 
+```java
+void start();
+
+void stop();
+
+boolean isRunning();
+
+void awaitShutDown();
+```
+
   A service will execute the action in its own thread and report metrics
  
   * **ProduceService**
