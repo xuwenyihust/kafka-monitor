@@ -24,21 +24,22 @@
 
 * bin
 
-### Structure
 
-* **App**
+### App
 
-  Start some producers/consumers, take predefined sequence of actions periodically
+Start some producers/consumers, take predefined sequence of actions periodically
   
-  These periodic or long-running actions: implemented in services
+These periodic or long-running actions: implemented in services
   
-  A **typical App**: composed of 1 producer service, 1 consumer service & 1 broker bounce service
+A **typical App**: composed of 1 producer service, 1 consumer service & 1 broker bounce service
 
-  * **SingleClusterMonitor**
+* **SingleClusterMonitor**
 
-  * **MultiClusterMonitor**
+* **MultiClusterMonitor**
   
---------------------------------------------------------------------
+
+### Service
+
 
 ```java
 void start();
@@ -50,31 +51,29 @@ boolean isRunning();
 void awaitShutDown();
 ```
 
-* **Service**
-
-  A service will execute the action in its own thread and report metrics
+A service will execute the action in its own thread and report metrics
  
-  * **ProduceService**
+* **ProduceService**
   
-    Report produce rate & availability 
+  Report produce rate & availability 
     
-    interface: `com.linkedin.kmf.producer.KMBaseProducer`
+  interface: `com.linkedin.kmf.producer.KMBaseProducer`
   
-  * **ConsumeService**
+* **ConsumeService**
   
-    Report message loss rate, message duplicate rate & end-to-end latency
+  Report message loss rate, message duplicate rate & end-to-end latency
     
-    interface: `com.linkedin.kmf.consumer.KMBaseConsumer`
+  interface: `com.linkedin.kmf.consumer.KMBaseConsumer`
   
-  * **TopicManagementService**
+* **TopicManagementService**
   
-    Ensure that every broker is leader of at least one partition of the monitor topic (to check produce availability)
+  Ensure that every broker is leader of at least one partition of the monitor topic (to check produce availability)
     
-    interface: `com.linkedin.kmf.topicfactory.TopicFactory`
+  interface: `com.linkedin.kmf.topicfactory.TopicFactory`
   
-  * **StatsdMetricsReporterService**
+* **StatsdMetricsReporterService**
   
-  * **DefaultMetricsReporterService**
+* **DefaultMetricsReporterService**
 
 
 
